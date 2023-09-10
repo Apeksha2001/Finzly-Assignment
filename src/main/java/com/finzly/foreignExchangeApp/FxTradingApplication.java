@@ -1,13 +1,13 @@
-package com.Apeksha.RestAPIDemo;
+package com.finzly.foreignExchangeApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestApiDemoApplication {
+public class FxTradingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestApiDemoApplication.class, args);
+		SpringApplication.run(FxTradingApplication.class, args);
 	}
 
 }
