@@ -2,7 +2,6 @@ package com.finzly.foreignExchangeApp.model;
 
 import org.springframework.stereotype.Component;
 
-
 @Component
 public class Trade {
 
@@ -10,20 +9,24 @@ public class Trade {
     private String currencyPair;
     private String customerName;
     private double amount;
-    private double USDINR_Rate =66.00;
+    private double rate;
     private String convertedINRAmount;
 
     public Trade() {
     }
 
-    public Trade(int tradeNo,String currencyPair, String customerName, double amount, double USDINR_Rate,String convertedINRAmount) {
-        this.tradeNo = tradeNo ;
+    // Constructor for creating a new trade
+
+    public Trade(int tradeNo, String currencyPair, String customerName, double amount, double rate, String convertedINRAmount) {
+        this.tradeNo = tradeNo;
         this.currencyPair = currencyPair;
         this.customerName = customerName;
         this.amount = amount;
-        this.USDINR_Rate = USDINR_Rate;
-        this.convertedINRAmount=convertedINRAmount;
+        this.rate = rate;
+        this.convertedINRAmount = convertedINRAmount;
     }
+
+    // Getter methods for retrieving field values
 
     public int getTradeNo() {
         return tradeNo;
@@ -42,21 +45,25 @@ public class Trade {
     }
 
 
-
-    public double getUSDINR_Rate() {
-        return USDINR_Rate;
-    }
-
-    public void setTradeNo(int tradeNo) {
-        this.tradeNo = tradeNo;
+    public double getRate() {
+        return rate;
     }
 
     public String getConvertedINRAmount() {
         return convertedINRAmount;
     }
 
+    // Setter method for updating field
+    public void setTradeNo(int tradeNo) {
+        this.tradeNo = tradeNo;
+    }
+
     public void setAmount(double amount) {
         this.amount = amount;
+    }
+
+    public void setRate(double rate) {
+        this.rate = rate;
     }
 
     public void setConvertedINRAmount(String convertedINRAmount) {

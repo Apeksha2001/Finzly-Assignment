@@ -1,0 +1,43 @@
+{
+  "item": [
+    {
+      "name": "Create Trade",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"currencyPair\": \"USD/INR\",\n    \"customerName\": \"John Doe\",\n    \"amount\": 1000.00\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/fxTrading/bookTrade",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "fxTrading", "bookTrade"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Trades",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/fxTrading/getAllTrades",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "fxTrading", "getAllTrades"]
+        }
+      },
+      "response": []
+    }
+    ]
+}

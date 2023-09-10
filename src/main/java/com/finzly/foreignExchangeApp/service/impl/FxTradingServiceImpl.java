@@ -14,6 +14,9 @@ public class FxTradingServiceImpl implements FxTradingService {
 
     List<Trade> list = new ArrayList<>();
 
+    /**
+     * Book a new trade.
+     */
     @Override
     public Object bookTrade(Trade trade) {
 
@@ -28,6 +31,9 @@ public class FxTradingServiceImpl implements FxTradingService {
 
     }
 
+    /**
+     * Get details of a trade
+     **/
     @Override
     public List<Trade> printTrades() {
         return list;

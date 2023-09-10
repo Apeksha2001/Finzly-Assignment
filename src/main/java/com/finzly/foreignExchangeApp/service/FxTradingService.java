@@ -7,6 +7,7 @@ import java.util.List;
 public interface FxTradingService {
 
     public Object bookTrade(Trade trade);
+
     public List<Trade> printTrades();
 
 }
